@@ -5,6 +5,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {RouterModule, Routes} from '@angular/router';
+import { HeaderComponent } from './dashboard/header/header.component';
 
 const appRoutes: Routes = [
     {path: '', component: DashboardComponent},
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
